@@ -101,6 +101,27 @@ O código da API foi organizado em pacotes separados por responsabilidade (modul
 
 O **Nginx** atua como uma camada de borda ("porteiro") na frente da nossa aplicação em Python (`FastAPI + Uvicorn`). Ele gerencia conexões, aumenta a segurança e protege a porta interna da aplicação.
 
+
+Este repositório contém a continuação do desenvolvimento da aula prática de Sistemas Distribuídos, focando na segmentação do código em pacotes por responsabilidade e na configuração do **Nginx** como proxy reverso.
+
+## 👥 Integrantes
+* Arthur Santana
+* Caio Pertence
+* Davi Augusto
+* Davi de Assis
+
+---
+
+## 🛠️ Estrutura do Projeto (Etapa 1)
+O código da API foi organizado em pacotes separados por responsabilidade (modularização)[cite: 1]. Exemplo de organização estrutural:
+* Camadas de rotas, modelos, controle e banco de dados isoladas de forma limpa.
+
+---
+
+## 🚀 Configuração do Nginx (Etapa 2)
+
+O **Nginx** atua como uma camada de borda ("porteiro") na frente da nossa aplicação em Python (`FastAPI + Uvicorn`). Ele gerencia conexões, aumenta a segurança e protege a porta interna da aplicação
+
 ### Passos para configuração:
 
 1. **Instalação do Nginx** (em ambiente Linux/Ubuntu):
