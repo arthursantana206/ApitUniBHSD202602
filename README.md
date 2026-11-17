@@ -80,3 +80,30 @@ Para o **Projeto A4**, o grupo deverá refatorar este monolito em uma **arquitet
      ```
 
 Após essa divisão, seu código estará preparado para escalar, integrando facilmente novas funcionalidades de segurança, como um proxy reverso Nginx, de forma totalmente estruturada e profissional.
+
+Este repositório contém a continuação do desenvolvimento da aula prática de Sistemas Distribuídos, focando na segmentação do código em pacotes por responsabilidade e na configuração do **Nginx** como proxy reverso.
+
+## 👥 Integrantes
+* Arthur Gabriel
+* Caio Pertence
+* Davi Assis
+* Davi Augusto
+
+---
+
+## 🛠️ Estrutura do Projeto (Etapa 1)
+O código da API foi organizado em pacotes separados por responsabilidade (modularização)[cite: 1]. Exemplo de organização estrutural:
+* Camadas de rotas, modelos, controle e banco de dados isoladas de forma limpa.
+
+---
+
+## 🚀 Configuração do Nginx (Etapa 2)
+
+O **Nginx** atua como uma camada de borda ("porteiro") na frente da nossa aplicação em Python (`FastAPI + Uvicorn`). Ele gerencia conexões, aumenta a segurança e protege a porta interna da aplicação.
+
+### Passos para configuração:
+
+1. **Instalação do Nginx** (em ambiente Linux/Ubuntu):
+   ```bash
+   sudo apt update
+   sudo apt install nginx
